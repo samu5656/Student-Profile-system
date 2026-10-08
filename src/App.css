@@ -1,48 +1,138 @@
+/* -----------------------------------------
+   Main Application
+----------------------------------------- */
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* Header */
-header {
-  text-align: center;
+
+/* -----------------------------------------
+   Header
+----------------------------------------- */
+
+.header {
+  background-color: #f2f2f2;
   padding: 20px;
-  background-color: #f0f0f0;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
 }
 
 .header-title {
-  color: blue;
+  color: #2563eb;
+  margin: 0;
 }
 
-/* Main Content */
+
+/* -----------------------------------------
+   Main Content
+----------------------------------------- */
+
 .container {
   width: 80%;
   max-width: 700px;
   margin: 30px auto;
   flex: 1;
+  text-align: center;
 }
 
-.container h2 {
-  margin-top: 25px;
-  margin-bottom: 10px;
+.container > h2 {
+  color: #333;
+  margin-bottom: 25px;
 }
 
-/* Student Profile */
-.student-profile {
-  border: 2px solid black;
-  padding: 20px;
-  margin-bottom: 20px;
+
+/* -----------------------------------------
+   Buttons
+----------------------------------------- */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.controls button {
+  padding: 10px 18px;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.complete-button {
+  background-color: #22c55e;
+  color: white;
+}
+
+.reset-button {
+  background-color: #ef4444;
+  color: white;
+}
+
+.toggle-button {
+  background-color: #2563eb;
+  color: white;
+}
+
+.controls button:hover {
+  opacity: 0.85;
+}
+
+
+/* -----------------------------------------
+   Student Profile
+----------------------------------------- */
+
+.student-profile {
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.student-profile h2 {
+  text-align: center;
+  color: #2563eb;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .student-profile p {
-  margin: 10px 0;
+  margin: 12px 0;
+  font-size: 16px;
 }
 
-/* Footer */
-footer {
-  text-align: center;
+
+/* -----------------------------------------
+   Hidden Profile Message
+----------------------------------------- */
+
+.hidden-message {
+  padding: 20px;
+  border: 1px dashed #999;
+  color: #666;
+}
+
+
+/* -----------------------------------------
+   Footer
+----------------------------------------- */
+
+.footer {
+  background-color: #f2f2f2;
   padding: 15px;
-  background-color: #f0f0f0;
+  text-align: center;
+  border-top: 2px solid #ddd;
+}
+
+.footer p {
+  margin: 0;
 }

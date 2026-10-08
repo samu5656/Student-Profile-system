@@ -1,6 +1,7 @@
+// Footer Component
 function Footer() {
   return (
-    <footer>
+    <footer className="footer">
       <p>© 2026 Student Management System</p>
     </footer>
   );
